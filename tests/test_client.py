@@ -16,7 +16,7 @@ def make_spec(**overrides) -> RequestSpec:
         port=8080,
         group="echo",
         action="ping",
-        token="SECRET-TOKEN-VALUE",
+        token="sample-token-fixture",
         fmt="text",
         timeout=5000,
         base64_encode=False,
@@ -79,7 +79,7 @@ def test_client_does_not_log_token_value(cfg, monkeypatch, caplog):
 
     monkeypatch.setattr(requests, "request", fake_request)
     with caplog.at_level(logging.DEBUG):
-        send_request(cfg, make_spec(token="SECRET-TOKEN-VALUE"))
+        send_request(cfg, make_spec(token="sample-token-fixture"))
 
     for record in caplog.records:
-        assert "SECRET-TOKEN-VALUE" not in record.getMessage()
+        assert "sample-token-fixture" not in record.getMessage()

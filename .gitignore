@@ -14,3 +14,4 @@ config.json
 .env
 .idea/
 .vscode/
+.history/

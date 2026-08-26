@@ -1,0 +1,44 @@
+{
+  "endpoint": {
+    "scheme": "http",
+    "default_host": "127.0.0.1",
+    "default_port": 8080,
+    "method": "POST",
+    "path_template": "/api/{group}/{action}",
+    "query": {
+      "token": "{token}",
+      "format": "{format}",
+      "timeout": "{timeout}",
+      "encoded": "{encoded}",
+      "_ts": "{timestamp}"
+    },
+    "format_codes": {
+      "text": 0,
+      "json": 1,
+      "xml": 2,
+      "form": 3
+    },
+    "bool_style": "true_false",
+    "token_mode": "auto",
+    "omit_empty_params": true,
+    "verify_tls": true
+  },
+  "labels": {
+    "host": "Host",
+    "group": "Group",
+    "action": "Action",
+    "token": "Token",
+    "fmt": "Format",
+    "timeout": "Timeout (ms, -1 = none)"
+  },
+  "directory": {
+    "enabled": false,
+    "url": "",
+    "code_field": "code",
+    "name_field": "name",
+    "host_field": "host",
+    "timeout_s": 5.0
+  },
+  "profiles_dir": "profiles",
+  "log_file": ""
+}

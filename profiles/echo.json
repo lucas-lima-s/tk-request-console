@@ -1,0 +1,14 @@
+{
+  "name": "echo",
+  "description": "Minimal text request against the bundled echo server.",
+  "host": "127.0.0.1",
+  "port": 8080,
+  "group": "echo",
+  "action": "ping",
+  "token": "",
+  "fmt": "text",
+  "timeout": -1,
+  "base64_encode": false,
+  "interpret_escapes": false,
+  "payload": "hello"
+}

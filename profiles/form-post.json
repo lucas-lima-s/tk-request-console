@@ -1,0 +1,14 @@
+{
+  "name": "form-post",
+  "description": "Form-encoded payload using interpreted NUL separators against the echo server.",
+  "host": "127.0.0.1",
+  "port": 8080,
+  "group": "echo",
+  "action": "submit",
+  "token": "ABC123",
+  "fmt": "form",
+  "timeout": -1,
+  "base64_encode": false,
+  "interpret_escapes": true,
+  "payload": "field1=one\\0field2=two\\0field3=three"
+}

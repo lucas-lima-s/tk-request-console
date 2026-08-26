@@ -1,0 +1,14 @@
+{
+  "name": "json-post",
+  "description": "JSON-formatted POST body against the bundled echo server.",
+  "host": "127.0.0.1",
+  "port": 8080,
+  "group": "echo",
+  "action": "submit",
+  "token": "1234",
+  "fmt": "json",
+  "timeout": 5000,
+  "base64_encode": false,
+  "interpret_escapes": false,
+  "payload": "{\"id\": 1, \"name\": \"sample\", \"active\": true}"
+}

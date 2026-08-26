@@ -2,7 +2,7 @@
   "name": "echo",
   "description": "Minimal text request against the bundled echo server.",
   "host": "127.0.0.1",
-  "port": 8080,
+  "port": 8099,
   "group": "echo",
   "action": "ping",
   "token": "",

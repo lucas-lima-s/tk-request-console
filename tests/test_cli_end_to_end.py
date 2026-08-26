@@ -15,7 +15,7 @@ def test_cli_url_prints_expected(tmp_path, monkeypatch, capsys):
     out = capsys.readouterr().out.strip()
     assert exit_code == 0
     payload = json.loads(out)
-    assert payload["url"].startswith("http://127.0.0.1:8080/api/echo/ping?")
+    assert payload["url"].startswith("http://127.0.0.1:8099/api/echo/ping?")
     assert "_ts=" in payload["url"]
 
 
